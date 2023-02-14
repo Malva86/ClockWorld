@@ -1,12 +1,53 @@
+body {
+  background-color: rgb(228, 228, 228);
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
 footer {
   text-align: center;
 }
 
 h1 {
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.select {
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.city {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.city:last-child {
+  border: none;
 }
 
 .app {
   text-align: center;
   margin: 0 auto;
+}
+
+.container {
+  max-width: 400px;
+  background: azure;
+  margin: 0 auto;
+  border: solid 1px red;
+  border-radius: 15px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.time {
+  font-size: 30px;
 }
