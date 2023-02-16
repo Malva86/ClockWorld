@@ -20,15 +20,18 @@
       <h1>⏲ World Clock ⏲</h1>
       <div class="app">
         <div class="select">
-          <select>
+          <select id="citySelect">
             <option value="">Select a city...</option>
-            <option value="Lima">Lima</option>
-            <option value="Los-Angeles">Los Angeles</option>
-            <option value="Shanghai">Shanghai</option>
+            <option value="Pacific/Auckland">Auckland</option>
+            <option value="Pacific/Honolulu">Honolulu</option>
+            <option value="Antarctica/Vostok">Vostok</option>
+            <option value="America/Lima">Lima</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="Asia/Shanghai">Shanghai</option>
           </select>
         </div>
 
-        <div class="cities">
+        <div class="cities" id="citiesid">
           <div class="city" id="warsaw">
             <h2>🏙 Warsaw</h2>
             <div class="date"></div>

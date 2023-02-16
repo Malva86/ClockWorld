@@ -34,3 +34,20 @@ setInterval(function () {
   capeTownDate.innerHTML = capeTownTimeMoment.format("MMMM, ddd Do YYYY");
   capeTownTime.innerHTML = capeTownTimeMoment.format("HH:mm:ss A");
 }, 1000);
+
+function updateCity(event) {
+  let cityTZ = event.target.value;
+  let cityName = cityTZ.replace("_", " ").split("/")[1];
+  let cityT = moment().tz(cityTZ);
+  let citiesEle = document.querySelector("#citiesid");
+  citiesEle.innerHTML = `<div class="city">
+            <h2>🏙 ${cityName}</h2>
+            <div class="date">${cityT.format("MMMM, ddd Do YYYY")}</div>
+            <div class="time"><strong>${cityT.format(
+              "HH:mm:ss A"
+            )}</strong></div>
+          </div>`;
+}
+
+let citiesSelectElement = document.querySelector("#citySelect");
+citiesSelectElement.addEventListener("change", updateCity);
